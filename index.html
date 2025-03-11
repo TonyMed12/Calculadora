@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <div class="calculadora">
+        <input type="text" id="display" class="pantallita" disabled>
+        <div class="buttons">
+            <button onclick="escribirNumero(7)">7</button>
+            <button onclick="escribirNumero(8)">8</button>
+            <button onclick="escribirNumero(9)">9</button>
+            <button class="signo" onclick="establecerOp('/')">÷</button>
+            <button onclick="escribirNumero(4)">4</button>
+            <button onclick="escribirNumero(5)">5</button>
+            <button onclick="escribirNumero(6)">6</button>
+            <button class="signo" onclick="establecerOp('*')">×</button>
+            <button onclick="escribirNumero(1)">1</button>
+            <button onclick="escribirNumero(2)">2</button>
+            <button onclick="escribirNumero(3)">3</button>
+            <button class="signo" onclick="establecerOp('-')">-</button>
+            <button onclick="escribirNumero(0)">0</button>
+            <button onclick="escribirDecimal()">.</button>
+            <button onclick="calcular()">=</button>
+            <button class="signo" onclick="establecerOp('+')">+</button>
+            <button onclick="limpiar()" class="limpiar">Limpiar</button>
+        </div>
+    </div>
+</body>
+</html>
